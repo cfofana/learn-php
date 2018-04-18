@@ -6,7 +6,8 @@
 
     <body>
         <?php
-            echo "<h1>Hello PHP!!!</h1>";
+            $x = "Hawa is a silly girl!!!";
+            echo $x;
         ?>
        
 
