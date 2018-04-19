@@ -35,6 +35,15 @@
 	// Reverse sort your array and print the joined elements to the screen
     rsort($the_array);
     print join(" ", $the_array);
+        
+        $familyFriends = array("rares", "cedric", "svetlin", "mom", "isatou", "dad", "musa", "muhammad", "isatou", "maate", "mamasa", "leptu", "bileh", "hawa", "mark", "vicki", "nemi", "michael");
+	// Sort the list
+    sort($familyFriends);
+	// Randomly select a winner!
+    $length = count($familyFriends);
+    $randNum = rand(0, $length-1);
+	// Print the winner's name in ALL CAPS
+	print strtoupper($familyFriends[$randNum]);
 	?>
 	
 
