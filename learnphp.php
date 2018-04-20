@@ -20,16 +20,7 @@
         
         $the_array = array("mango", "banana", "coconut", "avocado");
     sort($the_array);
-    print join(",", $the_array);
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    print join(",", $the_array);    
         ?>
        <?php
 	// Reverse sort your array and print the joined elements to the screen
@@ -46,6 +37,14 @@
 	print strtoupper($familyFriends[$randNum]);
 	?>
 	
+    <?php 
+            class Person {
+                
+            }
+            
+            $teacher = new Person();
+            $student = new Person();
+        ?>
 
     </body>
 </html>
