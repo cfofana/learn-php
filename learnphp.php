@@ -49,6 +49,9 @@
                     $this->lastname = $lastname;
                     $this->age = $age;
                 }
+                public function greet() {
+                    return "Hello, my name is ". $this->firstname . " " . $this->lastname.". ". "Nice to meet you! :-)";
+                }
             }
             
             
@@ -56,6 +59,8 @@
             $student = new Person("Ceesay", "Fofana", 26);
             echo $teacher->isAlive;
             echo $student->age;
+        echo $teacher->greet();
+            echo $student->greet();
         ?>
 
     </body>
