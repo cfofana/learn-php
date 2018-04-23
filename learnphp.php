@@ -51,9 +51,11 @@
                 }
             }
             
-            $teacher = new Person();
-            $student = new Person();
+            
+            $teacher = new Person("boring", "12345", 12345);
+            $student = new Person("Ceesay", "Fofana", 26);
             echo $teacher->isAlive;
+            echo $student->age;
         ?>
 
     </body>
