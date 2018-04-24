@@ -69,6 +69,12 @@
                 public function __construct($name) {
                     $this->name = $name;
                 }
+             public function bark() {
+                    return "Woof!";   
+                }
+                public function greet()      {
+                    return "Hello ". $this->name.", how are you today?";   
+                }
             }
         ?>
         
