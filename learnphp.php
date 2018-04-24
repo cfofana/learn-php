@@ -59,9 +59,21 @@
             $student = new Person("Ceesay", "Fofana", 26);
             echo $teacher->isAlive;
             echo $student->age;
-        echo $teacher->greet();
+            echo $teacher->greet();
             echo $student->greet();
+        
+        class Dog{
+                public $numLegs = 4;
+                public $name;
+                
+                public function __construct($name) {
+                    $this->name = $name;
+                }
+            }
         ?>
+        
+        
+         
 
     </body>
 </html>
