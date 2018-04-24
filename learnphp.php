@@ -76,6 +76,11 @@
                     return "Hello ". $this->name.", how are you today?";   
                 }
             }
+        
+            $dog1 = new Dog("Barker");
+            $dog2 =  new Dog("Amigo");
+            echo $dog1->bark();
+            echo $dog2->greet();
         ?>
         
         
