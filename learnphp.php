@@ -81,6 +81,35 @@
             $dog2 =  new Dog("Amigo");
             echo $dog1->bark();
             echo $dog2->greet();
+        
+        // inheritance of property
+            class Shape {
+                public $hasSides = true;
+            }
+            class Square extends Shape {
+                
+            }
+            $square = new Square();
+            if(property_exists($square, "hasSides")) {
+                echo "I have sides!!!";
+            }
+        
+        // override method of parent
+        class Vehicle {
+          public function honk() {
+            return "HONK HONK!";
+          }
+        }
+        
+        class Bicycle extends Vehicle {
+            public function honk() {
+             return "Beep beep!";   
+            }
+        }
+        
+        $bicycle = new Bicycle();
+        echo $bicycle->honk();
+        
         ?>
         
         
