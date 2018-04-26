@@ -100,7 +100,8 @@
             return "HONK HONK!";
           }
         }
-        
+        // use final public function honk(){ return "HONK HONK!";}
+        // to prevent overriding of parent methods
         class Bicycle extends Vehicle {
             public function honk() {
              return "Beep beep!";   
