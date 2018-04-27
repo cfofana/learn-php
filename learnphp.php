@@ -120,6 +120,16 @@
         const stealth = "MAXIMUM";
       }
          echo Ninja::stealth;
+        
+        // using static functions and variables
+        class King {
+          // Modify the code on line 10...
+          public static function proclaim() {
+            echo "A kingly proclamation!";
+          }
+        }
+        // ...and call the method below!
+        echo King::proclaim();
         ?>
         
         
