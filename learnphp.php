@@ -111,6 +111,15 @@
         $bicycle = new Bicycle();
         echo $bicycle->honk();
         
+        // using const variables
+        class Person {
+          
+      }
+      class Ninja extends Person {
+        // Add your code here...
+        const stealth = "MAXIMUM";
+      }
+         echo Ninja::stealth;
         ?>
         
         
