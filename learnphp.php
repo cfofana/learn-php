@@ -164,11 +164,86 @@
         echo $car[3];
         echo '<br />';
             
-        // ...and so should this!
+        // using keys to access array values
         echo $assocCar['make'];
+        echo "My car was made in ". $myArray[0]. ", its color is ". $myAssocArray['colour'] . ", it has ". $myArray[2] ." doors and the make is " . $myAssocArray['make']. ".";
+      ?>
+        <?php    
+        $food = array('pizza', 'salad', 'burger');
+        $salad = array('lettuce' => 'with',
+                   'tomato' => 'without',
+                   'onions' => 'with');
+        $pizza = array('cheese' => 'without',
+                        'pepper' => 'with',
+                        'chicken' => 'with');
+        $burger = array('lettuce' => 'with',
+                        'meat' => 'with',
+                        'barbecue sauce' => 'without');
+    
+      // Looping through an array using "for".
+      // First, let's get the length of the array!
+      $length = count($food);
+      $lengthPizza = count($pizza);
+      $lengthBurger = count($burger);
+    
+      // Remember, arrays in PHP are zero-based:
+      for ($i = 0; $i < $length; $i++) {
+        echo $food[$i] . '<br />';
+      }
+    
+      echo '<br /><br />I want my salad:<br />';
+    
+      // Loop through an associative array using "foreach":
+      foreach ($salad as $ingredient=>$include) {
+        echo $include . ' ' . $ingredient . '<br />';
+      }
+    
+      echo '<br />';
+    
+      // Create your own array here and loop
+      // through it using foreach!
+    echo 'I  want my pizza:<br />';
+    foreach ($pizza as $ingredient=>$include) {
+        echo $include . " " . $ingredient . "<br />";
+    }
+    echo '<br />';
+    echo 'I want my burger: <br />';
+    foreach($burger as $ingredient=>$include) {
+        echo $include . " " . $ingredient . '<br />';
+    }
+        
+        $deck = array(array('2 of Diamonds', 2),
+                      array('5 of Diamonds', 5),
+                      array('7 of Diamonds', 7),
+                      array('9 of Diamonds', 9));
+        
+      // Imagine the first chosen card was the 7 of Diamonds.
+      // This is how we would show the user what they have:
+      echo 'You have the ' . $deck[2][0] . '!';
+
       ?>
         
-        
+        <?php
+      // On the line below, create your own associative array:
+    $myArray = array(array('clark kent', 10),
+                    array('thor', 9),
+                    array('captain america', 8));
+
+      // On the line below, output one of the values to the page:
+     echo "My favorite superhero " . $myArray[0][0];
+          
+      // On the line below, loop through the array and output
+      // *all* of the values to the page:
+      $length = count($myArray);
+      echo '<br />';
+     for($i=0; $i < $length; $i++) {
+        for($j=0; $j < count($myArray[$i]); $j++) {
+            echo " " . $myArray[$i][$j];
+        }
+        echo '<br />';
+     }
+     
+      ?>
          
 
     </body>
