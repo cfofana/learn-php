@@ -225,6 +225,8 @@
         
         <?php
       // On the line below, create your own associative array:
+        // created a multidimensional associative array and then
+        // used a for loop to output each key, value pair
     $myArray = array(array('clark kent', 10),
                     array('thor', 9),
                     array('captain america', 8));
